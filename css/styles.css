@@ -76,6 +76,7 @@
     width: 48%;
     border-radius: 6px;
     min-width: 400px;
+    max-height: 473px;
 }
 
 .main .delivery h3 {
