@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.green {
+    color: #39B24A;
+}
+
+.red {
+    color: #FC200C;
+}
+
+.white {
+    color: white;
+}
+
+/* Estilos Header */
+
+.header {
+    display: flex;
+    height: 100px;
+    background-color: #222222;
+    color: white;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.header .logo {
+    align-items: center;
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.header .nav {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+    text-align: right;
+}
+
+.header .nav__list {
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.nav__list .list__item {
+    color: white;
+    font-weight: 300;
+}
+
+/* Estilos Main */
+
+.main {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 30px 0;
+    background-color: #E5E5E5;
+    z-index: -1;
+    box-shadow: inset 0px 3px 6px gray;
+}
+
+.main .delivery {
+    position: relative;
+    width: 48%;
+    border-radius: 6px;
+    min-width: 400px;
+}
+
+.main .delivery h3 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.main .delivery img {
+    width: 100%;
+    background-color: red;
+    border-radius: 6px;
+    object-fit: fill cover;
+}
+
+.main .podio {
+    width: 48%;
+    background-color: white;
+    border-radius: 6px;
+    display: block;
+    min-width: 400px;
+}
+
+.main .podio .podio__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.main .podio .podio__pizza {
+    display: flex;
+}
+
+.main .podio .podio__pizza .podio__top {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+.main .podio .podio__pizza .podio__top h3 {
+    text-align: center;
+    padding: 1em;
+}
+
+.main .podio .top__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    font-weight: bold;
+    height: 130px;
+    justify-content: space-around;
+}
+
+.main .podio .top__list li {
+    list-style: decimal;
+}
+
+.main .podio .podio__pizza .podio__tree {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .podio .podio__pizza .podio__tree img {
+    width: 8em;
+}
+
+/* Estilos Footer */
+
+.footer {
+    padding: 0 35px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    height: 150px;
+    color: white;
+}
+
+.footer .nav {
+    height: 100%;
+}
+
+.footer .nav__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer .foot__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
