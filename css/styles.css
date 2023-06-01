@@ -29,7 +29,6 @@
     background-color: #222222;
     color: white;
     justify-content: space-between;
-    z-index: 2;
 }
 
 .header .logo {
@@ -66,10 +65,9 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    gap: 5px;
-    padding: 30px 0;
+    gap: 20px 10px;
+    padding: 30px 10px;
     background-color: #E5E5E5;
-    z-index: -1;
     box-shadow: inset 0px 3px 6px gray;
 }
 
@@ -88,9 +86,9 @@
 
 .main .delivery img {
     width: 100%;
-    background-color: red;
     border-radius: 6px;
-    object-fit: fill cover;
+    object-fit: cover;
+    height: 100%;
 }
 
 .main .podio {
@@ -99,20 +97,25 @@
     border-radius: 6px;
     display: block;
     min-width: 400px;
+    overflow: hidden;
+    min-height: 286px;
 }
 
 .main .podio .podio__titulo {
     display: flex;
     justify-content: center;
-    padding: 2em;
+    padding-top: 2em;
+    height: 20%;
 }
 
 .main .podio .podio__pizza {
     display: flex;
+    height: 80%;
 }
 
 .main .podio .podio__pizza .podio__top {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 60%;
     height: 100%;
     background-color: white;
@@ -120,7 +123,8 @@
 
 .main .podio .podio__pizza .podio__top h3 {
     text-align: center;
-    padding: 1em;
+    padding: 1em 0 10px 0;
+    height: 20%;
 }
 
 .main .podio .top__list {
@@ -128,8 +132,10 @@
     flex-direction: column;
     padding-left: 70px;
     font-weight: bold;
-    height: 130px;
     justify-content: space-around;
+    height: 80%;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
 }
 
 .main .podio .top__list li {
@@ -141,10 +147,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
 }
 
 .main .podio .podio__pizza .podio__tree img {
-    width: 8em;
+    width: 9em;
 }
 
 /* Estilos Footer */
@@ -175,6 +182,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
 }
 
 
